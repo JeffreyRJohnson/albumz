@@ -4,15 +4,17 @@ import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
 
-interface AlbumDetailProps {
-  album: {
-    thumbnail_image: string,
-    title: string,
-    artist: string,
-    image: string,
-    url: string,
-    name: string;
-  };
+export interface AlbumData {
+  thumbnail_image: string;
+  title: string;
+  artist: string;
+  image: string;
+  url: string;
+  name: string;
+}
+
+export interface AlbumDetailProps {
+  album: AlbumData;
 }
 
 export default class AlbumDetail extends React.Component<AlbumDetailProps, {}> {

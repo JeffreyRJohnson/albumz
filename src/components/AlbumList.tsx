@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import axios from 'axios';
-import AlbumDetail from './AlbumDetail';
+import AlbumDetail, { AlbumData } from './AlbumDetail';
 
-export default class AlbumList extends Component<{}, any> {
-  constructor(props: {}) {
+interface AlbumListState {
+  albums: AlbumData[];
+}
+
+export default class AlbumList extends Component<{}, AlbumListState> {
+  constructor(props: any) {
     super(props);
     this.state = { albums: [] };
   }
