@@ -15,7 +15,7 @@ interface AlbumDetailProps {
   };
 }
 
-export default class AlbumDetail extends React.Component<AlbumDetailProps, any> {
+export default class AlbumDetail extends React.Component<AlbumDetailProps, {}> {
   constructor(props: any) {
     super(props);
   }

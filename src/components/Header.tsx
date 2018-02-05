@@ -5,7 +5,7 @@ interface HeaderProps {
   headerText: string;
 }
 
-export default class Header extends React.Component<HeaderProps, any> {
+export default class Header extends React.Component<HeaderProps, {}> {
   constructor(props: any) {
     super(props);
   }

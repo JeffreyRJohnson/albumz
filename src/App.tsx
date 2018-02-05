@@ -3,8 +3,8 @@ import { View } from 'react-native';
 import Header from './components/Header';
 import AlbumList from './components/AlbumList';
 
-export default class App extends React.Component<any, any> {
-  constructor(props: any) {
+export default class App extends React.Component<{}, {}> {
+  constructor(props: {}) {
     super(props);
   }
   public render() {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-export default class CardSection extends React.Component<any, any> {
-  constructor(props: any) {
+export default class CardSection extends React.Component<{}, {}> {
+  constructor(props: {}) {
     super(props);
   }
 
